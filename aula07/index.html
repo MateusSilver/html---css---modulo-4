@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 7 - segurança de iframes</title>
+    <!--
+    sandbox impede que scripts e ações de navegador funcionem e referrerpolicy: no-referrer, impede envio de dados
+    sandbox pode permitir ainda os valores:
+    * allowscripts
+    -->
+  </head>
+  <body>
+    <h1>Aula 7 - Segurança de Iframes</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, officia
+      repudiandae aliquid sapiente cumque blanditiis nemo vero expedita
+      reprehenderit neque minima. Aperiam in tenetur voluptatibus cum obcaecati
+      deleniti sit ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Delectus laboriosam aspernatur expedita laborum ut temporibus! Consequatur
+      amet rerum tenetur ratione et sapiente, eum dignissimos nesciunt dolores
+      facilis repellendus molestias tempore.
+    </p>
+    <iframe
+      src="paginas extras/pagina04.html"
+      frameborder="1"
+      sandbox="sandbox"
+      referrerpolicy="no-referrer"
+      >seu navegador não é compativel</iframe
+    >
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eius non
+      nulla accusantium totam saepe enim mollitia amet fuga, consequatur velit
+      explicabo dicta impedit? Beatae nobis et optio distinctio rerum. Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Nulla harum minima
+      autem omnis impedit necessitatibus id numquam veniam aperiam! Repellendus
+      earum minus repellat voluptatum praesentium id cum ex ut excepturi?
+    </p>
+    <iframe
+      src="paginas extras/pagina05.html"
+      frameborder="1"
+      sandbox="sandbox"
+      referrerpolicy="no-referrer"
+      >seu navegador não é compativel</iframe
+    >
+  </body>
+</html>
