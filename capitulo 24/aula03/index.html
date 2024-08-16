@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET e POST de Formulários</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /*
+      GET mostra os parametros na url, POST mostra no network do navegador em suas requisições, o GET pode fazer requisições de até 3000 bytes. https criptografa esses parametros antes de enviar.
+      */
+    </style>
+  </head>
+  <body>
+    <body>
+      <h1>formulário com GET e POST</h1>
+      <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+          <label for="inome">nome:</label>
+          <input type="text" name="nome" id="inome" />
+        </p>
+        <p>
+          <label for="isobrenome">sobrenome:</label>
+          <input type="text" name="sobrenome" id="isobrenome" />
+        </p>
+        <input type="submit" value="Enviar" />
+      </form>
+    </body>
+  </body>
+</html>
