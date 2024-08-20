@@ -12,6 +12,34 @@
         <label for="enome">Nome: </label
         ><input type="text" name="nome" id="enome" />
       </p>
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="futebol" id="ifutebol" checked /><label
+          for="ifutebol"
+          >futebol</label
+        >
+        <input type="checkbox" name="basquete" id="ibasquete" /><label
+          for="ibasquete"
+          >basquete</label
+        >
+        <input type="checkbox" name="natacao" id="inatacao" /><label
+          for="inatacao"
+          >Natação</label
+        >
+        <input type="checkbox" name="tenis" id="itenis" checked /><label
+          for="itenis"
+          >Tênis</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Sexo</legend>
+        <!-- Se eu coloco o mesmo nome nos botões de radio, ele só aceita um ou outro-->
+        <input type="radio" name="sexo" id="imasc" value="M" checked />
+        <label for="imasc">Masculino</label>
+
+        <input type="radio" name="sexo" id="ifem" value="F" />
+        <label for="ifem">Feminino</label>
+      </fieldset>
       <p>
         <input type="submit" value="Enviar" />
         <input type="reset" value="Cancelar" />
