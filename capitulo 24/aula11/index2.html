@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Output atraves de range</title>
+  </head>
+  <body>
+    <h1>Output de range</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <p>
+        <label for="inum">Número: </label
+        ><input
+          type="range"
+          name="range"
+          id="inum"
+          min="0"
+          max="50"
+          oninput="ival.innerHTML = Number(inum.value)"
+        />
+        <output id="ival">0</output>
+      </p>
+      <p>
+        <label for="iano">Ano em que voce nasceu: </label
+        ><input
+          type="number"
+          name="ano"
+          id="iano"
+          min="0"
+          max="2024"
+          oninput="calcidade()"
+        />
+      </p>
+      <p>
+        <label for="iidade">Sua idade é, ao fim do ano: </label
+        ><output id="iidade">0</output>
+      </p>
+      <p>
+        <input type="submit" value="Enviar" /><input
+          type="reset"
+          value="Cancelar"
+        />
+      </p>
+    </form>
+    <script>
+      function calcidade() {
+        let atual = new Date().getFullYear();
+        iidade.innerHTML = Number(atual) - Number(iano.value);
+      }
+    </script>
+  </body>
+</html>
