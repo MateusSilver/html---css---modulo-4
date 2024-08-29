@@ -1,3 +1,131 @@
 @charset "UTF-8";
 
 /* todas as demais midias */
+
+/* typical device breakpoints */
+/* 
+extra small devices: 600px
+small devices: 600px to 768px
+medium devices(tablet landscape): 768px to 992px
+large devices(pc): 992px to 1200px
+extra large devices: 1200px to up
+*/
+
+@media print {
+}
+
+/*cellphones first, so not small devices or phones*/
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+  h1 {
+    font-size: 48px;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+/* PRINT */
+
+@media print {
+  body {
+    background-image: url(../imagens/back-print.jpg);
+  }
+  h1 {
+    font-size: 2em;
+    text-shadow: none;
+    font-family: "Times New Roman", Times, serif;
+  }
+  main {
+    border: 2px solid black;
+  }
+  main::after {
+    content: "esse site foi imprimido!";
+    font-size: 14px;
+    font-weight: 200;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: block;
+  }
+  img#pc {
+    display: block;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+/* PC */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+  h1 {
+    font-size: 56px;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: block;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+/* TV */
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+  h1 {
+    font-size: 64px;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: block;
+  }
+}
