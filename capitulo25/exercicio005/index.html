@@ -9,7 +9,8 @@
   <body>
     <header>
       <h1>Meu Site</h1>
-      <nav>
+      <h2 id="menu" onclick="clickMenu()">Menu</h2>
+      <nav id="items">
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Sobre nos</a></li>
@@ -46,5 +47,14 @@
       </article>
     </main>
     <footer></footer>
+    <script>
+      function clickMenu() {
+        if (items.style.display == "none") {
+          items.style.display = "block";
+        } else {
+          items.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
