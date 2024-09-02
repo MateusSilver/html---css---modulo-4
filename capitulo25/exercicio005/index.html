@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>menu responsivo</title>
     <link rel="stylesheet" href="estilos/principal.css" />
+    <link rel="stylesheet" href="estilos/mediaqueries.css" />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header>
       <h1>Meu Site</h1>
       <h2 id="menu" onclick="clickMenu()">Menu</h2>
@@ -48,6 +49,14 @@
     </main>
     <footer></footer>
     <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 760) {
+          items.style.display = "block";
+        } else {
+          items.style.display = "none";
+        }
+      }
+
       function clickMenu() {
         if (items.style.display == "none") {
           items.style.display = "block";
