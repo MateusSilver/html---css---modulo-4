@@ -5,3 +5,20 @@ paleta de cores
 verde: #49a09d
 lilas: #5f2c82
 */
+
+/*
+mobile first
+*/
+
+:root {
+  --primary: #49a09d;
+  --secondary: #5f2c82;
+  --background: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
