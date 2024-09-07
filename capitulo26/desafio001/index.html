@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio 1 - Login</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="estilos/style.css" media="all" />
     <link rel="stylesheet" href="estilos/media.css" />
   </head>
@@ -14,7 +18,38 @@
         <div id="formulario">
           <h1>Login</h1>
           <p>Bem-vindo, insira seu login e senha</p>
-          <form action="login.php" method="get" autocomplete="on"></form>
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="campo">
+              <i class="material-icons">person</i>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                minlength="1"
+                maxlength="50"
+                placeholder="Email"
+                autocomplete="email"
+                required
+              /><label for="ilogin">Sing In</label>
+            </div>
+            <div class="campo">
+              <i class="material-icons">lock</i>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                minlength="6"
+                maxlength="30"
+                placeholder="Senha"
+                autocomplete="current-password"
+                required
+              /><label for="isenha">Senha</label>
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="esqueci.html"
+              >esqueci minha senha <i class="material-icons">mail</i></a
+            >
+          </form>
         </div>
       </section>
     </main>
